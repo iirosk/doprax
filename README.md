@@ -1,4 +1,4 @@
-# Xray + Argo for Container PaaS
+
 
 为容器平台而生---平台部署方式为镜像或者 Dockerfile 方式的专用
 
@@ -18,16 +18,16 @@
 
 ## 项目特点:
 * 适用于通过 dockerhub 上已有的镜像或 Dockerfile 来建实例的平台
-* 在平台上部署 Xray，采用的方案为 Argo + Xray + WebSocket + TLS
+* 
 * 解锁 ChatGPT
 * 在浏览器查看系统各项信息，方便直观
 * 使用 CloudFlare 的 Argo 隧道，使用TLS加密通信，可以将应用程序流量安全地传输到Cloudflare网络，提高了应用程序的安全性和可靠性。此外，Argo Tunnel也可以防止IP泄露和DDoS攻击等网络威胁。
-* 回落分流，同时支持 Xray 4 种主流协议: vless /  vmess / trojan / shadowsocks
+* 回落分流，同时支持  4 种主流协议: vless /  vmess / trojan / shadowsocks
 * vmess 和 vless 的 uuid，trojan 和 shadowsocks 的 password，各协议的 ws 路径既可以自定义，又或者使用默认值
 * 集成哪吒探针，可以自由选择是否安装
 * 前端 js 定时和 pm2 配合保活，务求让恢复时间减到最小
 * 节点信息以 V2rayN / Clash / 小火箭 链接方式输出
-* Xray 文件重新编译官方文件增加隐秘性，修改了运行时的显示信息，文件为: https://github.com/XTLS/Xray-core/blob/main/core/core.go
+
 
 <img width="718" alt="image" src="https://user-images.githubusercontent.com/92626977/215277537-ff358dc1-7696-481f-b8e4-74f0cdff30f4.png">
 
